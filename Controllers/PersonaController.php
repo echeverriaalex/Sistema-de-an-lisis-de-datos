@@ -33,6 +33,11 @@
             $this->ShowListView();
         }
 
+        public function Delete($id){
+            $this->personaPDO->Delete($id);
+            $this->ShowListView();
+        }
+
         public function GetAll(){
             return $this->personaPDO->GetAll();
         }

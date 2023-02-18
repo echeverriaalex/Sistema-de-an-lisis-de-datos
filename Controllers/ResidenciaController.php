@@ -1,7 +1,7 @@
 <?php
     namespace Controllers;
 
-use PDO\ResidenciaPDO;
+    use PDO\ResidenciaPDO;
 
     class ResidenciaController{
 
@@ -30,6 +30,11 @@ use PDO\ResidenciaPDO;
         public function Edit($id, $newId_r, $dir_calle, $dir_numero, $dir_piso_depto){
 
             $this->residenciaPDO->Edit($id, $newId_r, $dir_calle, $dir_numero, $dir_piso_depto);
+            $this->ShowListView();
+        }
+
+        public function Delete($id_r){
+            $this->residenciaPDO->Delete($id_r);
             $this->ShowListView();
         }
 

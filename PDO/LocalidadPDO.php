@@ -57,5 +57,17 @@
                 throw $ex;
             }
         }
+
+        public function Delete($id_l){
+            try{
+                $query = "delete from $this->tableName where (id_l = :id_l);";
+                $parameters['id_l'] = $id_l;
+                $this->connection = Connection::GetInstance();
+                $this->connection->ExecuteNonQuery($query,$parameters);
+            }
+            catch(PDOException $ex){
+                throw $ex;
+            }
+        }
     }
 ?>

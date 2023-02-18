@@ -35,5 +35,9 @@
             return $this->localidadPDO->GetAll();
         }
 
+        public function Delete($id_l){
+            $this->localidadPDO->Delete($id_l);
+            $this->ShowListView();
+        }
     }
 ?>
