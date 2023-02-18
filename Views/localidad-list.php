@@ -25,7 +25,7 @@
                                              <td><?php echo $localidad->getProvincia(); ?></td>
                                              <td>
                                                   <form action="<?php echo FRONT_ROOT ?>Localidad/Delete" method="post">
-                                                  <input type="text" name="id_l" value="<?php echo $localidad->getCodigoPostal();?>" class="form-control" hidden>
+                                                       <input type="text" name="id_l" value="<?php echo $localidad->getId();?>" class="form-control" hidden>
                                                        <button type="submit"> Borrar</button>
                                                   </form>
                                                   <form action="<?php echo FRONT_ROOT ?>Localidad/ShowEditView" method="post">

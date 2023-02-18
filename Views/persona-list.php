@@ -20,7 +20,7 @@
                                    <td><?php echo $persona->getId() ?></td>
                                    <td><?php echo $persona->getNombre() ?></td>
                                    <td>
-                                        <form action="<?php echo FRONT_ROOT ?>Student/Delete" method="post">
+                                        <form action="<?php echo FRONT_ROOT ?>Persona/Delete" method="post">
                                         <input type="text" name="id" value="<?php echo $persona->getId();?>" class="form-control" hidden>
                                              <button type="submit"> Borrar</button>
                                         </form>
