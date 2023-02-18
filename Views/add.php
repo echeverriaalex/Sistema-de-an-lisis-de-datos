@@ -83,14 +83,3 @@
           </div>
      </section>
 </main>
-<?php
-     /*
-          esto funciona perfecto 
-          a esta vista de agregar la engancho con la vista de listar
-          estudiantes entoces puedo ver el listado de los registrados
-          y asi evito agregar datos repetidos
-     */
-     //use Controllers\StudentController;
-     //$studentController = new StudentController();
-     //$studentController->ShowListView();
-?>
