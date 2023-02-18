@@ -1,8 +1,11 @@
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
      <span class="navbar-text">
-          <strong>Municipalidad</strong>
+     <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/Index">Sistema de analisis de datos</a>
      </span>
      <ul class="navbar-nav ml-auto">
+     <li class="nav-item">
+               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/Index">Inicio</a>
+          </li>
           <li class="nav-item">
                <a class="nav-link" href="<?php echo FRONT_ROOT ?>Manager/ShowAddView">Agregar</a>
           </li>
